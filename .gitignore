@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# Compiled files
+dist
+
 # misc
 .DS_Store
 .env
