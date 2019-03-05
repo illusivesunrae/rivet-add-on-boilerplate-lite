@@ -2,8 +2,9 @@
  * The Sass in this file is provided for the purposes of styling documentation.
  * It is not intended to house styling specific to the component itself.
  */
+
 .rvt-typeset h1 {
-  font-size: 2.5rem;
+  font-size: $type-sizes-xl;
   line-height: 1.1;
 }
 
@@ -18,7 +19,7 @@
 .rvt-typeset h4,
 .rvt-typeset h5,
 .rvt-typeset h6 {
-  font-size: 1.25rem;
+  font-size: $type-sizes-sm;
 }
 
 .rvt-typeset h1,
@@ -27,33 +28,23 @@
 .rvt-typeset h4,
 .rvt-typeset h5,
 .rvt-typeset h6 {
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   margin-top: 2rem;
 }
 
 pre {
   margin-top: 1.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #ddd;
+  border: 1px solid $color-black--200;
   padding: 1rem;
 }
 
 pre,
 code {
-  background-color: #f7f7f7;
+  background-color: $color-subtle-gray;
 }
 
 code {
-  font-size: 1rem;
+  font-size: $type-sizes-base;
   font-family: "Monaco", "Menolo", "Andale mono", monospace;
 }
-
-/**
- * Rivet's Sass variables are available for use with the inclusion of the Sass
- * Core Variables file above. You can see the available variables at the 
- * following link: https://github.com/indiana-university/rivet-source/blob/develop/src/sass/core/_variables.scss
- * 
- * This file is meant to house solely Sass specific to the new component. All
- * Sass intended to style the documentation should live in the 
- * code-snippet-styling.scss file.
- */

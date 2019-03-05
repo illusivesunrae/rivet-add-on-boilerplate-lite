@@ -1,38 +1,28 @@
-(function(root, factory) {
-  if (typeof define === "function" && define.amd) {
-    define(factory);
-  } else if (typeof exports === "object") {
-    module.exports = factory();
-  } else {
-    root.MyComponent = factory(root);
+const MyComponent = (() => {
+  "use strict";
+  /**
+   * Begin writing private functions below.
+   */
+  const handleClick = event => {
+    var button = event.target.closest("#my-button");
+
+    if (!button) return;
+
+    let message = prompt("What would you like me to say?");
+
+    alert(message);
   }
-})(
-  typeof global !== "undefined"
-    ? global
-    : typeof window !== "undefined"
-    ? window
-    : this,
-  function(window) {
-    "use strict";
 
-    var sampleFunctionality = function(event) {
-      var button = event.target.closest("#my-button");
+  const Constructor = function(selector) {
+    this.nodes = document.querySelectorAll(selector);
+  };
 
-      // Bail if the target was not a toggle button.
-      if (!button) return;
+  /**
+   * Begin writing component methods below.
+   */
+  Constructor.prototype.sampleFunctionality = event => {
+    document.addEventListener("click", handleClick);
+  };
 
-      let message = prompt("What would you like me to say?");
-      alert(message);
-    };
-
-    var init = function() {
-      console.log("Rivet Add-on Boilerplate!");
-      document.addEventListener("click", sampleFunctionality, false);
-    };
-
-    // Return public APIs
-    return {
-      init: init
-    };
-  }
-);
+  return Constructor;
+})();

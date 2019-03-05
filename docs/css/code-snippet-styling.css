@@ -47,13 +47,3 @@ code {
   font-size: 1rem;
   font-family: "Monaco", "Menolo", "Andale mono", monospace;
 }
-
-/**
- * Rivet's Sass variables are available for use with the inclusion of the Sass
- * Core Variables file above. You can see the available variables at the 
- * following link: https://github.com/indiana-university/rivet-source/blob/develop/src/sass/core/_variables.scss
- * 
- * This file is meant to house solely Sass specific to the new component. All
- * Sass intended to style the documentation should live in the 
- * code-snippet-styling.scss file.
- */
