@@ -25,11 +25,26 @@
       </p>
       <h2>Getting started</h2>
       <p>Start writing your documentation here...</p>
-      <h6>Add-on demo</h6>
+      <h2>Add-on demo</h2>
 
       <div class="rvt-m-top-lg">
         <button class="rvt-button" id="my-button">Click me</button>
       </div>
+
+      <pre>
+        <code class="language-javascript">
+          const handleClick = event => {
+
+            var button = event.target.closest("#my-button");
+        
+            if (!button) return;
+        
+            let message = prompt("What would you like me to say?");
+        
+            alert(message);
+          }
+        </code>
+      </pre>
     </div>
     <script src="./js/rivet-add-on-boilerplate-lite.js"></script>
     <script>
