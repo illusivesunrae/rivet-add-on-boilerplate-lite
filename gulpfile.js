@@ -17,7 +17,7 @@ function watchFiles(callback) {
 }
 
 function compileSass() {
-  return src("src/sass/**/rivet-add-on-boilerplate.scss")
+  return src("src/sass/**/rivet-add-on-boilerplate-lite.scss")
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(dest("dist/css/"))
     .pipe(browserSync.stream());
