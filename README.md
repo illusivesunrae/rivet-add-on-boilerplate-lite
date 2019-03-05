@@ -41,6 +41,6 @@ After you have Node installed, do the following:
 
 1. Clone this repo
 2. `npm install` to install all dependencies
-3. Run `npm run start` to start a development server and watch for changes to `.scss`, `.js`. `.md` files.
+3. Run `npm run start` to start a development server and watch for changes to `.scss`, `.js`. `.html` files.
 
 All files that are watched by default development task (`npm run start`) are compiled to and served from the `/dist` directory.
