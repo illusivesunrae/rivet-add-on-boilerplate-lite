@@ -4,9 +4,9 @@ const browserSync = require("browser-sync").create();
 
 // Development server
 function watchFiles(callback) {
-  browserSync.init(["docs/css/**/*.css", "docs/js/**/*.js", "docs/**/*.html"], {
+  browserSync.init(["dist/css/**/*.css", "dist/js/**/*.js", "dist/**/*.html"], {
     server: {
-      baseDir: "./docs"
+      baseDir: "./dist"
     }
   });
 
@@ -17,21 +17,21 @@ function watchFiles(callback) {
 }
 
 function compileSass() {
-  return src("src/sass/**/*.scss")
+  return src("src/sass/**/rivet-add-on-boilerplate.scss")
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-    .pipe(dest("docs/css/"))
+    .pipe(dest("dist/css/"))
     .pipe(browserSync.stream());
 }
 
 function compileJS() {
   return src("src/js/**/*.js")
-    .pipe(dest("docs/js/"))
+    .pipe(dest("dist/js/"))
     .pipe(browserSync.stream());
 }
 
 function compileHTML() {
   return src("src/index.html")
-    .pipe(dest("docs/"))
+    .pipe(dest("dist/"))
     .pipe(browserSync.stream());
 }
 
