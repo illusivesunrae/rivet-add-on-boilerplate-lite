@@ -33,23 +33,6 @@
   margin-top: 2rem;
 }
 
-pre {
-  margin-top: 1.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid $color-black--200;
-  padding: 1rem;
-}
-
-pre,
-code {
-  background-color: $color-subtle-gray;
-}
-
-code {
-  font-size: $ts-base;
-  font-family: "Monaco", "Menolo", "Andale mono", monospace;
-}
-
 .rvt-example {
   margin-top: $md;
 
@@ -61,6 +44,7 @@ code {
   }
 
   &__code {
+    background-color: $color-subtle-gray;
     border: 1px solid $color-black--200;
     border-top: none;
     border-bottom-right-radius: $xxs;
@@ -71,6 +55,8 @@ code {
       margin: 0;
 
       code {
+        font-size: $ts-xs;
+        font-family: "Monaco", "Menolo", "Andale mono", monospace;
         padding: $sm;
       }
     }
