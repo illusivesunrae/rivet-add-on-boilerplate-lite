@@ -31,20 +31,17 @@
         <button class="rvt-button" id="my-button">Click me</button>
       </div>
 
-      <pre>
-        <code class="language-javascript">
-          const handleClick = event => {
+      <pre><code class="language-javascript">const handleClick = event => {
 
-            var button = event.target.closest("#my-button");
-        
-            if (!button) return;
-        
-            let message = prompt("What would you like me to say?");
-        
-            alert(message);
-          }
-        </code>
-      </pre>
+  var button = event.target.closest("#my-button");
+
+  if (!button) return;
+
+  let message = prompt("What would you like me to say?");
+
+  alert(message);
+  
+}</code></pre>
     </div>
     <script src="./js/rivet-add-on-boilerplate-lite.js"></script>
     <script>
