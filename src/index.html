@@ -42,10 +42,6 @@
       <p>Start writing your documentation here...</p>
       <h2>Add-on demo</h2>
 
-      <div class="rvt-m-top-lg">
-        <button class="rvt-button" id="my-button">Click me</button>
-      </div>
-
       <!--
         Your add-on documentation should include code samples that show how a
         developer can use each variation of your new component.
@@ -58,11 +54,18 @@
       -->
       
       <!-- HTML -->
-      <pre><code class="html">&lt;div class=&quot;rvt-component-name&quot;&gt;
+      <div class="rvt-example">
+        <div class="rvt-example__demo">
+          <button class="rvt-button" id="my-button">Click me</button>
+        </div>
+        <div class="rvt-example__code">
+          <pre><code class="html">&lt;div class=&quot;rvt-component-name&quot;&gt;
   &lt;div class=&quot;rvt-component-name__content&quot;&gt;
     Example content
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
+        </div>
+      </div>
       
       <!-- JavaScript -->
       <pre><code class="js">const component = new MyComponent();
