@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My new component</title>
+    <title>Component name</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -34,13 +34,10 @@
         https://ux.iu.edu/writings/writing-effective-documentation/
       -->
       
-      <h1>My new component</h1>
+      <h1>Component name</h1>
       <p class="rvt-m-top-xxs rvt-m-bottom-xxl rvt-ts-20">
-        This is a brief description of what my component does.
+        A brief description of your component
       </p>
-      <h2>Getting started</h2>
-      <p>Start writing your documentation here...</p>
-      <h2>Add-on demo</h2>
 
       <!--
         Your add-on documentation should include code samples that show how a
@@ -52,6 +49,9 @@
 
         https://codebeautify.org/html-escape-unescape
       -->
+
+      <h2>Using the component</h2>
+      <p>Start writing your documentation here...</p>
       
       <!-- HTML -->
       <div class="rvt-example">
@@ -66,7 +66,7 @@
 &lt;/div&gt;</code></pre>
         </div>
       </div>
-      
+
       <!-- JavaScript -->
       <div class="rvt-example">
         <div class="rvt-example__code rvt-example__code--only">
@@ -75,6 +75,120 @@ component.sampleFunctionality();</code></pre>
         </div>
       </div>
 
+      <!--
+        Your add-on documentation should let developers know what use cases
+        your new component is intended for.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#when-to-use
+      -->
+
+      <h2>When to use</h2>
+      <ul>
+        <li>A situation where this component is useful</li>
+      </ul>
+
+      <!--
+        Your add-on documentation should also let developers know what use
+        cases might call for a different component than the one you've built.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#when-to-consider-something-else
+      -->
+
+      <h2>When to consider something else</h2>
+      <ul>
+        <li>A situation where a different component should be used instead</li>
+      </ul>
+
+      <!--
+        Your add-on documentation should let developers know if there's
+        anything they need to keep in mind in order for your component to
+        be accessible.
+
+        Example: https://rivet.iu.edu/components/page-content/badges/#accessibility
+      -->
+
+      <h2>Accessibility</h2>
+      <p>Notes about this component's accessibility.</p>
+
+      <!--
+        Your add-on documentation should let developers know if there's
+        anything they need to keep in mind or be careful of when implementing
+        your add-on, including additional options or notes about handling
+        corner cases.
+
+        Example: https://rivet.iu.edu/components/navigation/dropdown/#implementation-notes
+      -->
+
+      <h2>Implementation notes</h2>
+      <p>Notes about anything a developer should be aware of when implementing your add-on.</p>
+
+      <!--
+        If your add-on provides a developer with JavaScript methods or custom
+        events, describe them in the sections below. If your component doesn't
+        have any JavaScript, you can delete these sections.
+
+        Example: https://rivet.iu.edu/components/navigation/dropdown/#implementation-notes
+      -->
+
+      <h2>JavaScript API</h2>
+      <p>The component JavaScript exposes a couple of methods to use in your own scripts. The <code>init()</code> method is called by the main <code>rivet.js</code> file the first time the script is loaded. This method will initialize the component and attach the event listeners that handle its interactions.</p>
+
+      <h3>Available methods</h3>
+      <p>Here’s a breakdown of the available component methods you can use in your scripts.</p>
+      <table class="rvt-table-cells">
+        <caption class="sr-only">Component custom events</caption>
+        <thead>
+          <tr>
+            <th scope="col">Event</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="350" style="vertical-align: top;">
+              <code>ComponentName.method(args)</code>
+            </td>
+            <td style="vertical-align: top;">
+              <ul>
+                <li>Does a thing</li>
+                <li>Accepts some arguments</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Custom events</h3>
+      <p>The component also emits various custom events that you can listen for in your own scripts.</p>
+      <table class="rvt-table-cells">
+        <caption class="sr-only">Component custom events</caption>
+        <thead>
+          <tr>
+            <th scope="col">Event</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td width="350" style="vertical-align: top;">
+              <code>yourCustomComponentEvent</code>
+            </td>
+            <td style="vertical-align: top;">
+              Emitted when the component does a thing.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Custom event example</h4>
+      <div class="rvt-example">
+        <div class="rvt-example__code rvt-example__code--only">
+          <pre><code class="js">document.addEventListener(&apos;yourCustomComponentEvent&apos;, event =&gt; {
+  // Do something
+}, false);</code></pre>
+        </div>
+      </div>
+    
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
     <script src="./js/rivet-add-on-boilerplate-lite.js"></script>
