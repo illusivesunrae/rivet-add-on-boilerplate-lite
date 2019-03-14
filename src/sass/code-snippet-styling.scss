@@ -1,8 +1,9 @@
-@import "../../node_modules/rivet-uits/sass/core/variables";
 /**
  * The Sass in this file is provided for the purposes of styling documentation.
  * It is not intended to house styling specific to the component itself.
  */
+
+@import "../../node_modules/rivet-uits/sass/core/variables";
 
 .rvt-typeset h1 {
   font-size: $ts-xl;
