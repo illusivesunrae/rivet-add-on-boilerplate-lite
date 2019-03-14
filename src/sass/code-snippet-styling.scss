@@ -34,6 +34,14 @@
   margin-top: 2rem;
 }
 
+.rvt-table-cells tbody tr td {
+  vertical-align: top;
+
+  &:first-of-type {
+    width: 350px;
+  }
+}
+
 .rvt-example {
   margin-top: $md;
 
