@@ -54,31 +54,31 @@ code {
   margin-top: $md;
 
   &__demo {
-      border: 1px solid $color-black--200;
-      border-top-right-radius: $xxs;
-      border-top-left-radius: $xxs;
-      padding: $sm;
+    border: 1px solid $color-black--200;
+    border-top-right-radius: $xxs;
+    border-top-left-radius: $xxs;
+    padding: $sm;
   }
 
   &__code {
-      border: 1px solid $color-black--200;
-      border-top: none;
-      border-bottom-right-radius: $xxs;
-      border-bottom-left-radius: $xxs;
-      position: relative;
+    border: 1px solid $color-black--200;
+    border-top: none;
+    border-bottom-right-radius: $xxs;
+    border-bottom-left-radius: $xxs;
+    position: relative;
 
-      pre {
-          margin: 0;
+    pre {
+      margin: 0;
 
-          code {
-              padding: $sm;
-          }
+      code {
+        padding: $sm;
       }
+    }
   }
 
   &__code--only {
-      border: 1px solid $color-black--200;
-      border-radius: $xxs;
-      position: relative;
+    border: 1px solid $color-black--200;
+    border-radius: $xxs;
+    position: relative;
   }
 }
