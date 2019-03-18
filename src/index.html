@@ -48,6 +48,9 @@
         example code and get an escaped version back:
 
         https://codebeautify.org/html-escape-unescape
+
+        The code examples below show how you might document the HTML and
+        JavaScript for a new button component that shows a message when clicked.
       -->
 
       <h2>Using the component</h2>
@@ -56,22 +59,18 @@
       <!-- HTML -->
       <div class="rvt-example">
         <div class="rvt-example__demo">
-          <button class="rvt-button" id="my-button">Click me</button>
+          <button class="rvt-button rvt-button--fancy">Click me</button>
         </div>
         <div class="rvt-example__code">
-          <pre><code class="html">&lt;div class=&quot;rvt-component-name&quot;&gt;
-  &lt;div class=&quot;rvt-component-name__content&quot;&gt;
-    Example content
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+          <pre><code class="html">&lt;button class=&quot;rvt-button rvt-button--fancy&quot;&gt;Click me&lt;/button&gt;</code></pre>
         </div>
       </div>
 
       <!-- JavaScript -->
       <div class="rvt-example">
         <div class="rvt-example__code rvt-example__code--only">
-          <pre><code class="js">const component = new MyComponent();
-component.sampleFunctionality();</code></pre>
+          <pre><code class="js">const component = new MyComponent('.rvt-button--fancy');
+component.init();</code></pre>
         </div>
       </div>
 
@@ -197,8 +196,8 @@ component.sampleFunctionality();</code></pre>
     <script>
       hljs.initHighlightingOnLoad();
 
-      const component = new MyComponent();
-      component.sampleFunctionality();
+      const component = new MyComponent('.rvt-button--fancy');
+      component.init();
     </script>
   </body>
 </html>
