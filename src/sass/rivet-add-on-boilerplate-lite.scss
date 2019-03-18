@@ -1,11 +1,9 @@
 /**
- * Rivet's Sass variables are available for use with the inclusion of the Sass
- * Core Variables file above. You can see the available variables at the 
- * following link: https://github.com/indiana-university/rivet-source/blob/develop/src/sass/core/_variables.scss
- * 
- * This file is meant to house solely Sass specific to the new component. All
- * Sass intended to style the documentation should live in the 
- * code-snippet-styling.scss file.
+ * Rivet's Sass variables are available for you to use in your add-on's styles.
+ * For a complete list of Rivet Sass variables, see the Rivet GitHub repo:
+ *
+ * https://github.com/indiana-university/rivet-source/blob/develop/src/sass/core/_variables.scss
+ *
  */
 
 @import "./code-snippet-styling.scss";
