@@ -13,6 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/github.min.css"
     />
+
+    <!--
+      Update the path below to your renamed CSS file, such as:
+
+      ./css/rivet-add-on-name.css
+    -->
+
     <link rel="stylesheet" href="./css/rivet-add-on-boilerplate-lite.css" />
   </head>
   <body>
@@ -192,12 +199,23 @@ component.init();</code></pre>
     
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    
+    <!--
+      Update the path below to your renamed JavaScript file, such as:
+
+      ./js/rivet-add-on-name.js
+    -->
+
     <script src="./js/rivet-add-on-boilerplate-lite.js"></script>
     <script>
+
+      // Initializes syntax highlighting for your code examples.
       hljs.initHighlightingOnLoad();
 
+      // If your add-on requires JavaScript, do any initialization here.
       const component = new MyComponent('.rvt-button--fancy');
       component.init();
+
     </script>
   </body>
 </html>
