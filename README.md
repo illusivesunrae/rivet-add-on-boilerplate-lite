@@ -1,5 +1,5 @@
 # Rivet add-on boilerplate lite
-This boilerplate is meant to be a lightweight introduction to creating add-ons for the [Rivet software design system](https://rivet.iu.edu/). Replace the contents of this README with information about your add-on.
+This boilerplate is meant to be a lightweight introduction to creating add-ons for the [Rivet design system](https://rivet.iu.edu/). Replace the contents of this README with information about your add-on.
 
 ## Getting started
 This repo is meant to be cloned and used as a starting point for the Rivet workshop on creating Rivet add-ons.
