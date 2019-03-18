@@ -1,5 +1,3 @@
-@import "./code-snippet-styling.scss";
-
 /**
  * Rivet's Sass variables are available for use with the inclusion of the Sass
  * Core Variables file above. You can see the available variables at the 
@@ -9,3 +7,5 @@
  * Sass intended to style the documentation should live in the 
  * code-snippet-styling.scss file.
  */
+
+@import "./code-snippet-styling.scss";
