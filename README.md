@@ -49,3 +49,10 @@ This `index.html` file will be built to the `docs` folder and can be published w
 
 ## Getting help with your add-on
 If you need help building your add-on, you can reach out on the [Rivet slack channel](https://iuwebcommunity.slack.com/messages/rivet) or [Rivet mailing list](mailto:rivet-l@list.iu.edu).
+
+## Rivet Community Workshop Tutorial Details
+The Spring 2019 Rivet Community Workshop will feature three add-on tutorial projects. You can find out more about them by following the links below:
+
+* [Configurable subheader](https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/subheader.md)
+* [Progress bar](https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/progress-bar.md)
+* [Textarea word counter](https://github.com/illusivesunrae/rivet-add-on-boilerplate-lite/tree/master/workshop-tutorials/word-counter.md)
